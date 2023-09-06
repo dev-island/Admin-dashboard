@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div>
+        Dashboard
+        <button id="nav-btn" onclick="toggleMenu()">Open Nav</button>
+      </div>
+      <menu id="menu">
+        <img class="icon" onclick="toggleMenu()" src="../public/icons/home.svg" alt="home" />
+        <ul>
+          <li>
+            A menu Item
+          </li>
+          <li>
+            A menu Item
+          </li>
+          <li>
+            A menu Item
+          </li>
+          <li>
+            A menu Item
+          </li>
+        </ul>
+      </menu>
+    </nav>
+    <header>
+      <div class="account">
+        <img
+          class="icon"
+          src="../public/icons/bell.svg"
+        />
+        <img class="avatar" src="https://placebear.com/200/300" alt="avatar"/>
+        <h2>Morgan Oakley</h2>
+      </div>
+      <div class="search">
+        <img class="icon" src="../public/icons/search.svg" alt="search" />
+        <input type="text" name="search" />
+      </div>
+      <div class="user">
+        <h3 class="welcome-msg">Hi there,</h3>
+        <h1 class="user-name">Morgan Oakley (@morgan)</h1>
+      </div>
+      <div class="buttons">
+        
+      </div>
+    </header>
+    <main>
+      <div class="projects-container">
+        <h2>Your projects</h2>
+        <div class="projects">
+          <div class="card">
+            <div class="accent"></div>
+            <div class="card-content">
+              <div>
+                <h3>Title</h3>
+                <p>Vivamus eget ex nisl. Maecenas non dolor augue. Phasellus convallis condimentum sem sit amet rutrum.</p>
+              </div>
+              <div class="card-actions">
+                <img class="icon" src="../public/icons/star-plus-outline.svg" alt="star" />
+                <img class="icon" src="../public/icons/eye-plus-outline.svg" alt="view more" />
+                <img class="icon" src="../public/icons/fork.svg" alt="fork" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="accent"></div>
+            <div class="card-content">
+              <div>
+                <h3>Title</h3>
+                <p>Vivamus eget ex nisl. Maecenas non dolor augue. Phasellus convallis condimentum sem sit amet rutrum.</p>
+              </div>
+              <div class="card-actions">
+                <img class="icon" src="../public/icons/star-plus-outline.svg" alt="star" />
+                <img class="icon" src="../public/icons/eye-plus-outline.svg" alt="view more" />
+                <img class="icon" src="../public/icons/fork.svg" alt="fork" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="accent"></div>
+            <div class="card-content">
+              <div>
+                <h3>Title</h3>
+                <p>Vivamus eget ex nisl. Maecenas non dolor augue. Phasellus convallis condimentum sem sit amet rutrum.</p>
+              </div>
+              <div class="card-actions">
+                <img class="icon" src="../public/icons/star-plus-outline.svg" alt="star" />
+                <img class="icon" src="../public/icons/eye-plus-outline.svg" alt="view more" />
+                <img class="icon" src="../public/icons/fork.svg" alt="fork" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="accent"></div>
+            <div class="card-content">
+              <div>
+                <h3>Title</h3>
+                <p>Vivamus eget ex nisl. Maecenas non dolor augue. Phasellus convallis condimentum sem sit amet rutrum.</p>
+              </div>
+              <div class="card-actions">
+                <img class="icon" src="../public/icons/star-plus-outline.svg" alt="star" />
+                <img class="icon" src="../public/icons/eye-plus-outline.svg" alt="view more" />
+                <img class="icon" src="../public/icons/fork.svg" alt="fork" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="accent"></div>
+            <div class="card-content">
+              <div>
+                <h3>Title</h3>
+                <p>Vivamus eget ex nisl. Maecenas non dolor augue. Phasellus convallis condimentum sem sit amet rutrum.</p>
+              </div>
+              <div class="card-actions">
+                <img class="icon" src="../public/icons/star-plus-outline.svg" alt="star" />
+                <img class="icon" src="../public/icons/eye-plus-outline.svg" alt="view more" />
+                <img class="icon" src="../public/icons/fork.svg" alt="fork" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </main>
+  </div>
+  <script src="index.js" /></script>
+</body>
+</html>
