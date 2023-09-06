@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-container">
+          <img class="icon" src="../public/icons/view-dashboard.svg" alt="Logo" />
+          <h1>Dashboard</h1>
+          <img onclick="toggleNav()" class="icon" src="../public/icons/menu.svg" alt="menu button" />
+        </div>
+        <menu id="menu">
+          <ul>
+            <li>
+              <img class="icon" src="icon" alt="Icon" />
+              <a href="#">Dashboard</a>
+            </li>
+            <li>
+              <img class="icon" src="icon" alt="Icon" />
+              <a href="#">Dashboard</a>
+            </li>
+            <li>
+              <img class="icon" src="icon" alt="Icon" />
+              <a href="#">Dashboard</a>
+            </li>
+            <li>
+              <img class="icon" src="icon" alt="Icon" />
+              <a href="#">Dashboard</a>
+            </li>
+          </ul>
+          <img onclick="toggleNav()" class="icon" src="../public/icons/close.svg" alt="close button" />
+        </menu>
+      </nav>
+      <header>
+        <!-- Search & login -->
+        <div>
+          <div class="search-container">
+            <img class="icon" src="../public/icons/search.svg" alt="Search" />
+            <input type="text" />
+          </div>
+          <div class="account-info">
+            <img class="icon" src="notification" alt="Notification" />
+            <img class="icon" src="avatar" alt="Avatar" />
+            <button class="account">Andrew Locke</button>
+          </div>
+        </div>
+        <div class="user-info">
+          <img class="icon" src="avatar" alt="Avatar" />
+          <div class="user-name">
+            <p>Hi, Andrew</p>
+            <h2>Andrew Locke (@Andrew)</h2>
+          </div>
+        </div>
+        <div class="action-btns">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </header>
+      <main>
+        <div class="feed">
+          <h2>Announcements</h2>
+          <div class="card"></div>
+        </div>
+        <div class="feed">
+          <h2>Trending</h2>
+          <div class="card"></div>
+        </div>
+        <div class="feed">
+          <h2>Your projects</h2>
+          <div class="card"></div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
