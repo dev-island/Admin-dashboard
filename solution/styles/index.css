@@ -69,6 +69,8 @@ nav {
 }
 
 menu {
+  margin: 0;
+  padding: 24px;
   position: fixed;
   top: 0;
   left: 0;
@@ -82,22 +84,35 @@ menu {
 menu.active {
   animation: open 0.5s ease;
   transform: translateX(0%);
+  z-index: 1;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 header {
   display: grid;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-rows: auto auto auto;
   grid-gap: 1rem;
   background: var(--white);
   box-shadow: var(--box-shadow);
   padding: 1rem 2rem;
 }
 
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: auto;
+}
+
 .buttons button {
   background: var(--blue);
   color: var(--white);
   border-radius: 16px;
-  width: 150px;
+  width: 100px;
   padding: 8px;
   font-weight: bold;
   border: none;

@@ -39,3 +39,17 @@ You don’t have to make a pixel perfect match with the design example. Consider
 Don’t forget to push your finished dashboard to GitHub. Use GitHub Pages to publish it to the world!
 
 
+## Resources
+
+### Icons
+[Material Icons](https://pictogrammers.com/library/mdi/)
+
+### Fonts
+[Google Fonts](https://fonts.google.com/)
+
+### Placeholder images
+- [Lorem Picsum](https://picsum.photos/)
+- [Place bear](https://placebear.com/)
+- [Lorem Space](https://lorem.space/)
+- [Place kitten](https://placekitten.com/)
+- [robohash](https://robohash.org/)
