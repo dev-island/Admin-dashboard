@@ -8,6 +8,23 @@ body {
   height: 100vh;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+svg {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+svg.large {
+  height: 50px;
+  width: 50px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -17,6 +34,11 @@ nav {
   background-color: var(--nav-bg);
   display: grid;
   grid-template-rows: 75px auto;
+  color: white;
+}
+
+nav svg {
+  color: inherit;
 }
 
 .nav-container {
@@ -32,7 +54,7 @@ nav {
 
 menu {
   position: fixed;
-  top: 0;
+  top: 75px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -41,9 +63,33 @@ menu {
   animation: slide-left .2s ease-in-out;
 }
 
-menu.active {
+.hamburger {
+  height: 50px;
+  width: 50px;
+}
+
+.hamburger #top-line,
+.hamburger #bottom-line,
+.hamburger #middle-line {
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+nav.active menu {
   animation: slide-right .2s ease-in-out;
   transform: translateX(0%);
+}
+
+nav.active svg {
+	#top-line {
+		animation: down-rotate 0.6s ease-out both;
+	}
+	#bottom-line {
+		animation: up-rotate 0.6s ease-out both;
+	}
+	#middle-line {
+		animation: hide 0.6s ease-out forwards;
+	}
 }
 
 header {

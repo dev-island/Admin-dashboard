@@ -87,6 +87,18 @@ menu.active {
   z-index: 1;
 }
 
+ {
+	#top-line {
+		animation: down-rotate 0.6s ease-out both;
+	}
+	#bottom-line {
+		animation: up-rotate 0.6s ease-out both;
+	}
+	#middle-line {
+		animation: hide 0.6s ease-out forwards;
+	}
+}
+
 .close {
   position: absolute;
   top: 30px;
