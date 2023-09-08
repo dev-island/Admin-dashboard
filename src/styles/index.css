@@ -14,13 +14,13 @@ h1 {
   color: white;
 }
 
-svg {
+.icon {
   height: 25px;
   width: 25px;
   cursor: pointer;
 }
 
-svg.large {
+.icon.large {
   height: 50px;
   width: 50px;
 }
@@ -37,8 +37,8 @@ nav {
   color: white;
 }
 
-nav svg {
-  color: inherit;
+nav svg path {
+  fill: white;
 }
 
 .nav-container {
@@ -56,11 +56,16 @@ menu {
   position: fixed;
   top: 75px;
   left: 0;
+  right:0;
   height: 100%;
-  width: 100%;
   background: var(--nav-bg);
   transform: translateX(-100%);
   animation: slide-left .2s ease-in-out;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 3rem;
 }
 
 .hamburger {
